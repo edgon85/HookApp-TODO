@@ -1,8 +1,7 @@
-:root{
- font-family: 'Roboto', sans-serif;
- font-size: 16px;
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
-
 
 body {
   margin: 0;
@@ -15,33 +14,75 @@ input {
   border: 1px solid grey;
   border-radius: 4px;
   padding-inline: 1rem;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
 }
-
 
 .button {
   background-color: transparent;
-   color: white;
-   padding-block: .5rem;
-   padding-inline: 1rem;
-   border: none;
-   border-radius: 0.25rem;
-   cursor: pointer;
-   margin-inline-end: .5rem;
+  color: white;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-inline-end: 0.5rem;
 }
 
-.button:active{
+.button:active {
   transform: scale(0.9);
 }
 
-.is-primary{
+.button:disabled{
+  opacity: .5;
+}
+
+.is-primary {
   background-color: #0d6efd;
 }
 
-.is-danger{
+.is-danger {
   background-color: #dc3545;
 }
 
 .mt-2 {
   margin-block-start: 1rem;
 }
+
+.alert {
+  background: #cff4;
+  padding-block: 2.5rem;
+  text-align: center;
+  border: 1px solid #b6effb;
+  border-radius: 0.25rem;
+  color: #055160;
+}
+
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgb(201, 197, 197);
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.blockquote p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.blockquote footer {
+  position: relative;
+}
+
+.blockquote footer::before {
+  content: "";
+  position: absolute;
+  inline-size: 1rem;
+  block-size: 2px;
+  background: black;
+  top: 50%;
+  left: -1.5rem;
+}
+
+
