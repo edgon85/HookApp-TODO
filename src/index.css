@@ -88,4 +88,37 @@ input {
 
 h1 {
    font-size: 1.5rem;
+   margin: 0;
+}
+
+
+nav, .links {
+  display: flex;
+  flex-direction: row;
+}
+
+nav{
+  justify-content: space-between;
+  align-items: center;
+  border-block-end: 1px solid rgb(193, 192, 192);
+  padding-block: .7rem;
+}
+.links{
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #055160;
+  opacity: .5;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.links a:hover{
+  opacity: 1;
+}
+
+.links a.active{
+   opacity: 1;
 }
